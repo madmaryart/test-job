@@ -1,0 +1,184 @@
+#app {
+  font-family: Roboto;
+  font-size: 14px;
+}
+header {
+  height: 76px;
+  width: 100%;
+  border-bottom: solid #ffffff;
+  box-shadow: 0px 1px 0px 0px rgba(17, 17, 17, 0.1);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header img {
+  height: 32px;
+  width: 175px;
+  float: right;
+  position: absolute;
+}
+nav {
+  margin: 0 auto;
+}
+header nav a {
+  color: #111111;
+  opacity: 0.48;
+  text-decoration: none;
+  padding: 12px;
+}
+.user {
+  width: 30%;
+  margin: 0 auto;
+}
+.user_form {
+  width: 100%;
+}
+.user_form .form-control input {
+  width: 90%;
+}
+.children {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 33px;
+}
+.children_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.children_form__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.children_form__item .form-control {
+  width: unset;
+}
+
+.children h3 {
+  float: left;
+}
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111111;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.children__addChildButton.disabled {
+  display: none;
+}
+.form-control {
+  width: 100%;
+  position: relative;
+  margin: 5px;
+}
+
+.form-control input {
+  display: block;
+  outline: none;
+
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 4px;
+  padding: 15px;
+  padding-top: 26px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.form-control label {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  left: 16px;
+  color: #111111;
+  opacity: 0.48;
+  top: 8px;
+  font-size: 13px;
+}
+.form-control input:hover {
+  border: 1px solid #bee9ff;
+}
+.form-control input:focus {
+  border: 1px solid #01a7fd;
+}
+
+.children__addChildButton {
+  height: 44px;
+  width: 194px;
+  background: none;
+  border: solid #01a7fd 2px;
+  border-radius: 100px;
+  color: #01a7fd;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  float: right;
+}
+.children__addChildButton:hover {
+  background: #eaf8ff;
+  border-color: #0093df;
+  color: #0093df;
+}
+.children_form__deleteChildButton {
+  background: none;
+  border: none;
+  color: #01a7fd;
+}
+.user_form__saveProfile {
+  height: 44px;
+  width: 118px;
+  background: #01a7fd;
+  border: none;
+  border-radius: 100px;
+  color: white;
+}
+.user_form__saveProfile:hover {
+  background: #0093df;
+}
+.previewForm {
+  width: 30%;
+  margin: 0 auto;
+}
+.previewForm_personalData {
+  font-weight: 800;
+}
+.previewForm_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+.previewForm_children {
+  display: inline-block;
+  font-weight: 800;
+  line-height: 44px;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+footer {
+  height: 76px;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  background-color: #fafafa;
+}
+.user,
+.previewForm {
+  flex: 1 0 auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
